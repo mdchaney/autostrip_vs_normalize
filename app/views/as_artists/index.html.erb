@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>As artists</h1>
+
+<div id="as_artists">
+  <% @as_artists.each do |as_artist| %>
+    <%= render as_artist %>
+    <p>
+      <%= link_to "Show this as artist", as_artist %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New as artist", new_as_artist_path %>
