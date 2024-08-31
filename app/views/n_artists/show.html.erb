@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @n_artist %>
+
+<div>
+  <%= link_to "Edit this n artist", edit_n_artist_path(@n_artist) %> |
+  <%= link_to "Back to n artists", n_artists_path %>
+
+  <%= button_to "Destroy this n artist", @n_artist, method: :delete %>
+</div>

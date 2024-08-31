@@ -1,0 +1,2 @@
+module NArtistsHelper
+end

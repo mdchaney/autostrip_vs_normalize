@@ -1,0 +1,22 @@
+<%= form_with(model: n_artist) do |form| %>
+  <% if n_artist.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(n_artist.errors.count, "error") %> prohibited this n_artist from being saved:</h2>
+
+      <ul>
+        <% n_artist.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

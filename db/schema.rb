@@ -10,8 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_08_31_145616) do
+ActiveRecord::Schema[7.1].define(version: 2024_08_31_155546) do
   create_table "as_artists", force: :cascade do |t|
+    t.string "name", limit: 100, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "n_artists", force: :cascade do |t|
     t.string "name", limit: 100, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

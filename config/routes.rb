@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   root "main#index"
 
   resources :as_artists
+  resources :n_artists
 end
